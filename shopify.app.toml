@@ -1,0 +1,20 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7fbee76e08179de1c8718d76030f59da"
+name = "MK FE"
+handle = "mooseknuckles-fe-mdb-connector"
+application_url = "https://d387owu54d9uht.cloudfront.net/"
+embedded = true
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [ "https://d387owu54d9uht.cloudfront.net/auth/callback" ]
+
+[pos]
+embedded = false

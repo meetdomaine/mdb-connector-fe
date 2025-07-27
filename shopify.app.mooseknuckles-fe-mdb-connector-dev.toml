@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "fc31ac7b30bc31bed0bb8fbf9806783f"
+name = "mooseknuckles-fe-mdb-connector"
+handle = "mooseknuckles-fe-mdb-connector-1"
+application_url = "https://chorus-sensitive-going-aka.trycloudflare.com"
+embedded = true
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-07"
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://chorus-sensitive-going-aka.trycloudflare.com/auth/callback",
+  "https://chorus-sensitive-going-aka.trycloudflare.com/auth/shopify/callback",
+  "https://chorus-sensitive-going-aka.trycloudflare.com/api/auth/callback"
+]
+
+[pos]
+embedded = false
