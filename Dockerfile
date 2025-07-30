@@ -16,9 +16,6 @@ RUN npm remove @shopify/cli
 
 COPY . .
 
-COPY prisma ./prisma/
-RUN npx prisma migrate deploy
-RUN npx prisma migrate status
 RUN npm run build
 
 

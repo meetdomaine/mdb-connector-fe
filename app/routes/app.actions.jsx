@@ -105,16 +105,6 @@ export default function Actions() {
       </div>
       </Card>
     </Page>
-      {/* {toastData && (
-        <Toast
-          content={toastData.content}
-          isError={toastData.isError}
-          duration={toastData.duration}
-          onDismiss={(toastData) => {
-            setToastData(null);
-          }}
-        />
-      )} */}
     </>
   );
 }
