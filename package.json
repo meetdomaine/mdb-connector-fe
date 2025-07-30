@@ -12,12 +12,9 @@
     "generate": "shopify app generate",
     "graphql-codegen": "graphql-codegen",
     "lint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
-    "prisma": "prisma",
-    "setup": "prisma generate && prisma migrate deploy",
     "shopify": "shopify",
-    "start": "npx prisma migrate deploy && remix-serve ./build/server/index.js",
-    "vite": "vite",
-    "postinstall": "npx prisma generate && npx prisma migrate deploy"
+    "start": "remix-serve ./build/server/index.js",
+    "vite": "vite"
   },
   "type": "module",
   "engines": {

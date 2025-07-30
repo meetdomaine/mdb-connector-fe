@@ -28,10 +28,6 @@ export default $config({
       ? "https://foo@sentry.io/bar"
       : "f3fa01a57656241f2e8a47270af2583c";
      
-      const DATABASE_URL = $app.stage !== "production"
-      ? "https://foo@sentry.io/bar"
-      : "postgresql://postgres:d6QSozQoN6zeWqV54RlwjPtaSK34Sg14@mooseknuckles-fe-mdb-conn-production-shopifyfeinstance-bchvcwnc.cbsmekksosvl.us-west-2.rds.amazonaws.com:5432/mooseknuckles_fe_mdb_connector";
-
     const vpc = new sst.aws.Vpc("mdbConnectorFeVpc", { nat: "managed" });
     const rds = new sst.aws.Postgres("shopifyFe", {
       vpc,
@@ -43,7 +39,7 @@ export default $config({
       environment: {
         SHOPIFY_APP_URL,
         SHOPIFY_API_KEY,
-        SHOPIFY_API_SECRET
+        SHOPIFY_API_SECRET,
       }
   });
   },
